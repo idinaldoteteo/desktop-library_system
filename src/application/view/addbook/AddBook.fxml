@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+
+<StackPane fx:id="rootStackPane" stylesheets="@../main/DarkTheme.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.view.addbook.AddBookController">
+   <children>
+      <AnchorPane fx:id="rootAnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="270.0" prefWidth="500.0">
+         <children>
+            <VBox styleClass="promptTextFill_Cadastro" stylesheets="@../main/DarkTheme.css" AnchorPane.bottomAnchor="60.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <JFXTextField fx:id="tittle" labelFloat="true" promptText="Book Title" styleClass="promptTextFill_Cadastro" stylesheets="@../main/DarkTheme.css" unFocusColor="#4c4c4c">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="20.0" />
+                     </VBox.margin>
+                  </JFXTextField>
+                  <JFXTextField fx:id="ID" labelFloat="true" layoutX="10.0" layoutY="10.0" promptText="Book ID" styleClass="promptTextFill_Cadastro" stylesheets="@../main/DarkTheme.css">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                  </JFXTextField>
+                  <JFXTextField fx:id="author" labelFloat="true" layoutX="10.0" layoutY="35.0" promptText="Book Author" styleClass="promptTextFill_Cadastro" stylesheets="@../main/DarkTheme.css">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                  </JFXTextField>
+                  <JFXTextField fx:id="publisher" labelFloat="true" layoutX="10.0" layoutY="60.0" promptText="Book Publisher" styleClass="promptTextFill_Cadastro" stylesheets="@../main/DarkTheme.css">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                  </JFXTextField>
+               </children>
+            </VBox>
+            <HBox alignment="CENTER" layoutX="-141.0" layoutY="234.0" prefHeight="60.0" stylesheets="@../main/DarkTheme.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+               <children>
+                  <JFXButton buttonType="RAISED" onAction="#BTSave" prefHeight="60.0" prefWidth="150.0" stylesheets="@../main/DarkTheme.css" text="Save" textAlignment="CENTER">
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="15.0" right="15.0" top="10.0" />
+                     </HBox.margin>
+                  </JFXButton>
+                  <JFXButton buttonType="RAISED" onAction="#BTCancel" prefHeight="60.0" prefWidth="150.0" stylesheets="@../main/DarkTheme.css" text="Cancel" textAlignment="CENTER">
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="15.0" right="15.0" top="10.0" />
+                     </HBox.margin>
+                  </JFXButton>
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

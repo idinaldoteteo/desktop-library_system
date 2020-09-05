@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+
+<AnchorPane fx:id="rootAnchorPane" prefHeight="650.0" prefWidth="900.0" stylesheets="@../main/DarkTheme.css" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.141" fx:controller="application.view.chart.ChartController">
+   <children>
+      <JFXButton onAction="#BTClose" text="Close" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="70.0" />
+      <AnchorPane prefHeight="650.0" prefWidth="600.0" stylesheets="@../main/DarkTheme.css" AnchorPane.rightAnchor="0.0">
+         <children>
+            <VBox fx:id="vBoxPane" prefHeight="650.0" prefWidth="600.0" spacing="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="650.0" prefWidth="300.0" styleClass="rootPane" stylesheets="@../main/DarkTheme.css" AnchorPane.bottomAnchor="60.0" AnchorPane.leftAnchor="0.0">
+         <children>
+            <VBox fx:id="vBoxPane1" layoutX="21.0" layoutY="75.0" prefHeight="650.0" prefWidth="300.0" spacing="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="575.0" prefWidth="150.0" styleClass="rootPane" stylesheets="@../main/DarkTheme.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.view.toolbar.ToolbarController">
+   <children>
+      <JFXButton alignment="CENTER" contentDisplay="TOP" mnemonicParsing="false" onAction="#loadAddUser" prefHeight="400.0" prefWidth="200.0" stylesheets="@../main/DarkTheme.css" text="Add User">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIconView glyphName="USER" size="30" styleClass="icon-fill" />
+         </graphic>
+      </JFXButton>
+      <JFXButton alignment="CENTER" contentDisplay="TOP" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#loadAddBook" prefHeight="400.0" prefWidth="200.0" stylesheets="@../main/DarkTheme.css" text="Add Book">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIconView glyphName="BOOK" size="30" styleClass="icon-fill" />
+         </graphic>
+      </JFXButton>
+      <JFXButton alignment="CENTER" contentDisplay="TOP" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#loadTableUsers" prefHeight="400.0" prefWidth="200.0" stylesheets="@../main/DarkTheme.css" text="User List">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIconView glyphName="TABLE" size="30" styleClass="icon-fill" />
+         </graphic>
+      </JFXButton>
+      <JFXButton alignment="CENTER" contentDisplay="TOP" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#loadTableBooks" prefHeight="400.0" prefWidth="200.0" stylesheets="@../main/DarkTheme.css" text="Book List">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIconView glyphName="TABLE" size="30" styleClass="icon-fill" />
+         </graphic>
+      </JFXButton>
+      <JFXButton alignment="CENTER" contentDisplay="TOP" layoutX="10.0" layoutY="346.0" mnemonicParsing="false" onAction="#loadChart" prefHeight="400.0" prefWidth="200.0" stylesheets="@../main/DarkTheme.css" text="Chart">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIconView glyphName="OBJECT_GROUP" size="30" styleClass="icon-fill" />
+         </graphic>
+      </JFXButton>
+      <JFXButton alignment="CENTER" contentDisplay="TOP" layoutX="10.0" layoutY="470.0" mnemonicParsing="false" onAction="#loadSettings" prefHeight="400.0" prefWidth="200.0" stylesheets="@../main/DarkTheme.css" text="Settings">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIconView glyphName="COG" size="30" styleClass="icon-fill" />
+         </graphic>
+      </JFXButton>
+   </children>
+</VBox>

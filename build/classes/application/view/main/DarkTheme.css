@@ -1,0 +1,124 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+
+/*-------------------- style for application   */
+* {
+	-fx-primary: #2A2E37; /* root */
+	-fx-secondary: #F7FF0F; /* amarelo */
+	-fx-primaryText: #E0EAF7; /* cinza */
+}
+
+.rootPane {
+	-fx-background-color: -fx-primary;
+}
+
+.icon-fill {
+	-fx-fill: -fx-primaryText;
+	
+}
+
+.promptTextFill{
+	-fx-prompt-text-fill: -fx-primaryText;
+}
+
+.button {
+	-fx-fill: -fx-primaryText;
+	-fx-text-fill: -fx-primaryText;
+	-fx-background-color: -fx-primary;
+	-fx-border-color: -fx-secondary;
+	-fx-border-radius: 20px;
+	-fx-background-radius: 20px;
+	-fx-pref-width: 150px;
+	-fx-font-size: 13pt;
+}
+
+.button:hover{
+	-fx-fill: -fx-primary;
+	-fx-text-fill: -fx-primary;
+	-fx-border-color: -fx-secondary;
+	-fx-background-color: -fx-secondary;
+}
+
+.button:hover .icon-fill{
+	-fx-fill: -fx-primary;
+}
+
+.text-field{
+	-fx-text-fill: -fx-primaryText;
+	-fx-font-size: 13pt;
+	-jfx-focus-color: -fx-secondary;
+}
+
+
+.promptTextFill_Cadastro{
+	-fx-text-fill: -fx-primary;
+	-fx-font-size: 10pt;
+	-jfx-focus-color: #0636FF;
+}
+/*-------------------- style for the login  */
+.wrong-login{
+	-fx-background-color: #FF9C93;
+}
+
+
+/*--------------------style for the main class*/
+.tab{
+	-fx-background-color: -fx-primary;
+	-fx-pref-width: 350;
+	-fx-pref-height: 60;
+}
+
+.tab-header-background{
+	-fx-background-color: -fx-primary;
+}
+
+.jfx-rippler{
+	-jfx-rippler-fill: -fx-secondary;
+}
+
+.tab-selected-line{
+	-fx-background-color:  -fx-secondary;
+}
+
+.menu-bar{
+	-fx-base:-fx-primary;
+	-fx-background-color: -fx-primary;
+}
+
+.context-menu{
+	-fx-background-color: derive(-fx-primary, 80%);
+}
+
+.jfx-hamburger StackPane {
+	-fx-background-color: -fx-secondary;
+	-fx-background-radius: 10px;
+}
+
+.textInformation{
+	-fx-font-size: 13pt;
+	-fx-fill: -fx-secondary;
+}
+.listViewTextInformation{
+	-fx-background-color: -fx-primary;
+}
+
+
+/*  Chart style */
+.data0.chart-pie{
+	-fx-pie-color:#4FFF30; /* verde */
+	-fx-border-color: derive(#4FFF30,30%)
+}
+.data1.chart-pie{
+	-fx-pie-color:#36C2FF; /* azul */
+	-fx-border-color: derive(#36C2FF,30%)
+}
+.chart-pie-label{
+	-fx-fill: -fx-secondary;
+}
+
+/* Chart Style barChart */
+.chart-bar {
+    -fx-background-color: -fx-primary;
+    -fx-border-color: -fx-secondary;
+    -fx-background-radius: 10px;
+}
